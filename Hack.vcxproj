@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CAimbot.cpp" />
+    <ClCompile Include="cAntiAim.cpp" />
+    <ClCompile Include="cBhop.cpp" />
+    <ClCompile Include="CGameEventManager2.cpp" />
+    <ClCompile Include="cIniFile.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="cMenu.cpp" />
+    <ClCompile Include="cNetVars.cpp" />
+    <ClCompile Include="cNoSpread.cpp" />
+    <ClCompile Include="cRadar.cpp" />
+    <ClCompile Include="draw.cpp" />
+    <ClCompile Include="esp.cpp" />
+    <ClCompile Include="Hooks.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="n0xius.cpp" />
+    <ClCompile Include="Needed.cpp" />
+    <ClCompile Include="public\mathlib.cpp" />
+    <ClCompile Include="public\tier0\memoverride.cpp" />
+    <ClCompile Include="public\tier1\checksum_md5.cpp" />
+    <ClCompile Include="vtable.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CAimbot.h" />
+    <ClInclude Include="cAntiAim.h" />
+    <ClInclude Include="cBhop.h" />
+    <ClInclude Include="CGameEventManager2.h" />
+    <ClInclude Include="cIniFile.h" />
+    <ClInclude Include="cMenu.h" />
+    <ClInclude Include="cNetVars.h" />
+    <ClInclude Include="cNoSpread.h" />
+    <ClInclude Include="cVars.h" />
+    <ClInclude Include="detours.h" />
+    <ClInclude Include="draw.h" />
+    <ClInclude Include="esp.h" />
+    <ClInclude Include="Include.h" />
+    <ClInclude Include="n0xius.h" />
+    <ClInclude Include="Needed.h" />
+    <ClInclude Include="SDK.h" />
+    <ClInclude Include="vtable.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Recodev34</ProjectName>
+    <ProjectGuid>{27A83F93-AA97-4A42-A550-FE568E337A21}</ProjectGuid>
+    <RootNamespace>Hook</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60610.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\binary\</OutDir>
+    <IntDir>Release\</IntDir>
+    <ExtensionsToDeleteOnClean>*.obj%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.bat</ExtensionsToDeleteOnClean>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath);$(IncludePath);public\mathlib;public\cl_dll\sdk\vgui;public\cl_dll\sdk;public\zip;public\vtf;public\vstdlib;public\vphysics;public\VGuiMatSurface;public\vgui_controls;public\vgui;public\vaudio;public\unitlib;public\unicode;public\tier1;public\tier0;public\SoundEmitterSystem;public\shaderlib;public\phonemeextractor;public\materialsystem;public\keyframe;public\jpeglib;public\ImportLibrarys;public\GameUI;public\game_shared;public\game_shared\cstrike;public\game_shared\hl1;public\game_shared\hl2;public\game_shared\sdk;public\game_shared\tf2;public\Friends;public\engine;public\dlls;public\demofile;public\cl_dll;public\appframework;public\</IncludePath>
+    <LibraryPath>$(LibraryPath);public\ImportLibrarys;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>MinSpace</Optimization>
+    </ClCompile>
+    <Link>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <OutputFile>.\binary\$(TargetName).dll</OutputFile>
+      <AdditionalLibraryDirectories>public\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>user32.lib; detours.lib;winmm.lib;vstdlib.lib;vgui_controls.lib;tier0.lib</AdditionalDependencies>
+      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.LIB;</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <OutputFile>
+      </OutputFile>
+      <AdditionalLibraryDirectories>public\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>user32.lib;</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

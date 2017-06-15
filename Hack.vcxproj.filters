@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CPP">
+      <UniqueIdentifier>{dcb6cf4e-e2c1-4a84-bac4-fb5e6a8b566e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H">
+      <UniqueIdentifier>{5a8b1487-3da1-4c2b-be08-65c1056d1215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ValveSDK">
+      <UniqueIdentifier>{e616982b-33bf-4c53-980c-496a64db004b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CAimbot.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="cNoSpread.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="n0xius.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="vtable.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="public\tier0\memoverride.cpp">
+      <Filter>ValveSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="public\mathlib.cpp">
+      <Filter>ValveSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="cNetVars.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Needed.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="public\tier1\checksum_md5.cpp">
+      <Filter>ValveSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="draw.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="cMenu.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="cIniFile.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="esp.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="cAntiAim.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="cBhop.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="cRadar.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameEventManager2.cpp">
+      <Filter>CPP</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CAimbot.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="cNoSpread.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Include.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="n0xius.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="vtable.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="cNetVars.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Needed.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="draw.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="cMenu.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="cVars.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="detours.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="cIniFile.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="esp.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="cAntiAim.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="cBhop.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameEventManager2.h">
+      <Filter>H</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
